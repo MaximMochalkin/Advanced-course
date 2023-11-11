@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "100Tasks", "100Tasks\100Tasks.csproj", "{64D2F314-7C67-4AFC-AF74-92952076D222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "100Tasks", "100Tasks\100Tasks.csproj", "{64D2F314-7C67-4AFC-AF74-92952076D222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait.Task1.CancellationTokens", "AsyncAwait.Task1.CancellationTokens\AsyncAwait.Task1.CancellationTokens.csproj", "{5F9BB21E-4EEF-4D02-8AA5-BB59E812A678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{64D2F314-7C67-4AFC-AF74-92952076D222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D2F314-7C67-4AFC-AF74-92952076D222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D2F314-7C67-4AFC-AF74-92952076D222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9BB21E-4EEF-4D02-8AA5-BB59E812A678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9BB21E-4EEF-4D02-8AA5-BB59E812A678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9BB21E-4EEF-4D02-8AA5-BB59E812A678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9BB21E-4EEF-4D02-8AA5-BB59E812A678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

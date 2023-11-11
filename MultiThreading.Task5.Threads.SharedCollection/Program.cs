@@ -28,7 +28,7 @@ void AddElementsToCollection()
             Console.WriteLine($"Added {i} to the collection.");
         }
         addSignal.Set(); // Notify the printing thread
-        if (i < 10)
+        if (i <= 10)
             printSignal.WaitOne(); // Wait for the printing thread to print
     }
 }

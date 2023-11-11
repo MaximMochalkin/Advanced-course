@@ -14,16 +14,22 @@ Console.ReadLine();
 static void HundredTasks()
 {
     Task[] tasks = new Task[TaskAmount];
-
+    var factory = new TaskFactory();
     for (int taskNumber = 0; taskNumber < TaskAmount; taskNumber++)
     {
-        tasks[taskNumber] = Task.Run(() =>
-        {
+        tasks[taskNumber] = factory.StartNew(() => {
             for (int iterationNumber = 1; iterationNumber <= MaxIterationsCount; iterationNumber++)
             {
                 Output(taskNumber, iterationNumber);
             }
         });
+        //tasks[taskNumber] = Task.Run(() =>
+        //{
+        //    for (int iterationNumber = 1; iterationNumber <= MaxIterationsCount; iterationNumber++)
+        //    {
+        //        Output(taskNumber, iterationNumber);
+        //    }
+        //});
     }
 
     Task.WaitAll(tasks);

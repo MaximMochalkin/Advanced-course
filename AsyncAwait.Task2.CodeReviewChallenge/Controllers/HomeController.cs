@@ -20,14 +20,14 @@ public class HomeController : Controller
         _privacyDataService = privacyDataService ?? throw new ArgumentNullException(nameof(privacyDataService));
     }
 
-    public ActionResult Index()
+    public IActionResult Index()
     {
         return View();
     }
 
-    public ActionResult Privacy()
+    public async Task<IActionResult> Privacy()
     {
-        ViewBag.Message = _privacyDataService.GetPrivacyDataAsync().Result;
+        ViewBag.Message = await _privacyDataService.GetPrivacyDataAsync().ConfigureAwait(false);
         return View();
     }
 
